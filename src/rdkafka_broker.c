@@ -390,7 +390,8 @@ static void rd_kafka_broker_set_error (rd_kafka_broker_t *rkb, int level,
                                         "Disconnected while requesting "
                                         "ApiVersion: "
                                         "might be caused by incorrect "
-                                        "security.protocol configuration or "
+                                        "security.protocol configuration "
+                                        "(connecting to a SSL listener?) or "
                                         "broker version is < 0.10 "
                                         "(see api.version.request)",
                                         ap/*ignored*/);
